@@ -7,11 +7,11 @@ from web3.providers.rpc import HTTPProvider
 #infura_url = f"https://mainnet.infura.io/v3/{infura_token}"
 
 def connect_to_eth():
-	url = #FILL THIS IN
+	url = f"https://mainnet.infura.io/v3/7021cb20f6df4433803248a57d1ba9be"
 	w3 = Web3(HTTPProvider(url))
 	assert w3.isConnected(), f"Failed to connect to provider at {url}"
 	return w3
 	
 
 if __name__ == "__main__":
-	connectToEth()
+	connect_to_eth()
